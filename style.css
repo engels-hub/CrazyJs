@@ -1,0 +1,55 @@
+html, body{
+    height:100%;
+}
+header {
+    padding: 60px;
+    text-align: center;
+    
+  }
+
+main {
+    text-align:center;
+}  
+span{
+    background-color: white;
+    padding: 7px;
+    opacity: 90%;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+#answer{
+    display: none;
+}
+pre{
+    width:80%;
+    margin-left: 10%;
+}
+  pre, code{
+    white-space: pre-line !important;       /* Since CSS 2.1 */
+    white-space: -moz-pre-line;  /* Mozilla, since 1999 */
+    white-space: -pre-line;      /* Opera 4-6 */
+    white-space: -o-pre-line;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+@keyframes taadaa { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .zero{
+    opacity:0;
+  }
+  .anim {
+    animation: taadaa 2s 1;
+  }
