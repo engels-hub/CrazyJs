@@ -22,8 +22,9 @@ footer {
     width: 100%;
     text-align: center;
   }
-#answer{
-    display: none;
+div{
+    width:60%;
+    margin-left: 20%;
 }
 pre{
     width:80%;
@@ -36,20 +37,41 @@ pre{
     white-space: -o-pre-line;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+textarea{
+    width: calc(100% - 20px);
+    margin-left: 10px;
+}
 
-@keyframes taadaa { 
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .zero{
-    opacity:0;
-  }
-  .anim {
-    animation: taadaa 2s 1;
-  }
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border: 67px solid #363535;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+  border: 2px none #404040;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #949494;
+}
+::-webkit-scrollbar-track:active {
+  background: #626262;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

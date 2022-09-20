@@ -3,52 +3,40 @@
 <head>
   <meta charset="utf-8">
   <title>Cursed JS</title>
-   <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>JS is fun</title>
-  <meta name="description" content="JS obfuscator">
+  <meta name="description" content="JFucker">
   <meta name="author" content="AP">
   <script src="cursed.js"></script>
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link href="style.css" rel="stylesheet" />
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="favicon.png">
   
 </head>
 <body >
-    <div>
+    
     <header>
-        <H1>Js code obfuscator</H1>
+        <H1>JF*ucker</H1>
     </header>
     <main>
-      <label for="query" style="text-align: left; margin-left: 10%">Input</label>
-        <textarea id="query" name="query" rows="20" cols="100" placeholder="Paste your JS code here, then click submit.">console.log("js is fun")</textarea>
+        <div>
+        <label for="query" style="text-align: left;">Input</label>
+        <textarea id="query" name="query" rows="20"  placeholder="Paste your JS code here, then click submit.">console.log("js is fun")</textarea>
+        </div>
         <br>
         <div >
         <button id="button1">Submit</button> <button id="button2">Copy</button>
         </div>
         <br>
-        <label for="ans" style="text-align: left; margin-left: 10%;">Output</label>
-        <textarea id="answer" name="ans" cols="100" placeholder="Obfuscated code goes here"></textarea>
-        <pre><code id="code">
-
-        </code></pre>
+        <div >
+        <label for="ans" style="text-align: left; ">Output</label>
+        <textarea id="answer" name="ans" cols="100" readonly style="overflow:hidden; margin-bottom: 5%" placeholder="JF*ucked code goes here"></textarea>
+        </div>
     </main>
   
   <footer>
@@ -60,15 +48,12 @@
     button1.addEventListener("click", ()=>{
       setHeight('query');    
     var req = document.getElementById("query");
-    var code = document.getElementById("code");
     var ans = document.getElementById("answer");
     
         var ob = encode(req.value);
         console.log(ob);
-        codeS= ob.split(" ");
-        
-        code.innerHTML=ob;
         ans.value=ob;
+        setHeight('answer');
     });
     
     var button2 =document.getElementById("button2");
@@ -80,6 +65,5 @@
     
 
   </script>
-  </div>
 </body>
 </html>
